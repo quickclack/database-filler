@@ -1,0 +1,32 @@
+{
+    "name": "quickclack/database-filler",
+    "description": "This package for creating and running fillers on laravel projects",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Quickclack\\Fillers\\": "quickclack/database-filler/src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "quickclack",
+            "email": "amakarov@kazanworkout.ru",
+            "homepage": "https://github.com/quickclack"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2|^8.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fillers\\ServiceProviders\\ArtisanCommandServiceProvider",
+                "Fillers\\ServiceProviders\\MigrationsServiceProvider"
+            ]
+        },
+        "branch_alias": {
+            "dev-master": "1.0.0"
+        }
+    }
+}
