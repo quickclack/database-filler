@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Quickclack\\Fillers\\": "quickclack/database-filler/src/"
+            "Quickclack\\Fillers\\": "src"
         }
     },
     "authors": [
@@ -21,8 +21,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Fillers\\ServiceProviders\\ArtisanCommandServiceProvider",
-                "Fillers\\ServiceProviders\\MigrationsServiceProvider"
+                "Quickclack\\Fillers\\Providers\\ArtisanCommandServiceProvider",
+                "Quickclack\\Fillers\\Providers\\MigrationsServiceProvider"
             ]
         },
         "branch_alias": {
