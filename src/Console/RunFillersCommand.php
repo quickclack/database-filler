@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Quickclack\Fillers\Console;
 
 use Illuminate\Console\Command;
-use Fillers\Services\FillerRunningService;
+use Quickclack\Fillers\Services\FillerRunningService;
 
 final class RunFillersCommand extends Command
 {
