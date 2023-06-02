@@ -2,6 +2,7 @@
     "name": "quickclack/database-filler",
     "description": "This package for creating and running fillers on laravel projects",
     "minimum-stability": "stable",
+    "version": "1.0.0",
     "license": "MIT",
     "autoload": {
         "psr-4": {
