@@ -1,22 +1,26 @@
 # Laravel database filler
 
+[Quickclack/Fillers](https://packagist.org/packages/quickclack/database-filler)
+
 This package will help you update database data using php classes
 
 ## Installation
 ```
-composer require quickclack/database-filler
+composer require quickclack/database-filler:dev-master
 ```
 
 ## Usage
 
 ```
+created directory fillers in ./database
+
 php artisan make:filler UpdateProductPriceFiller
 
     <?php
     
     declare(strict_types = 1);
     
-    final class UpdateProductPriceFiller
+    return new class
     {
         public function run(): void
         {
