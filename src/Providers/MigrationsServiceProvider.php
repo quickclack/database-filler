@@ -10,12 +10,6 @@ final class MigrationsServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->publishes([
-            __DIR__. '/../database/fillers' => database_path('database')
-        ]);
-
-        $this->publishes([
-            __DIR__. '/../database/migrations' => database_path('migrations')
-        ]);
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 }
