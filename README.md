@@ -11,14 +11,16 @@ composer require quickclack/database-filler:dev-master
 
 ## Usage
 
+- php artisan migrate
+- create directory fillers in ./database
+- php artisan make:filler UpdateProductPriceFiller
+
 ```
-created directory fillers in ./database
-
-php artisan make:filler UpdateProductPriceFiller
-
-    <?php
+<?php
     
     declare(strict_types = 1);
+  
+    use Illuminate\Support\Facades\DB;
     
     return new class
     {
@@ -31,9 +33,9 @@ php artisan make:filler UpdateProductPriceFiller
                 ]);
         }
     };
-
-php artisan db:fill
 ```
+
+- php artisan db:fill
 
 ## License
 
